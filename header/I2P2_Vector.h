@@ -8,14 +8,11 @@ namespace I2P2
 class Vector : public randomaccess_container 
 {
  private:
-  // you may want to declare the necessary members for your Vector here
     pointer p_begin;
     pointer p_last;
     pointer p_end;
 
-  /* The following are standard methods from the STL
-   * If you are not sure what they do
-   * look them up and implement your own version */
+  /* The following are standard methods from the STL */
  public:
     ~Vector();
     Vector();
