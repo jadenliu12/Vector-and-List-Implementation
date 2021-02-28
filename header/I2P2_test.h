@@ -13,6 +13,3 @@ namespace I2P2_test {
 }
 
 #endif
-
-/* This file should not be modified */
-
