@@ -20,7 +20,6 @@ struct dynamic_size_container : container_base {
   virtual void clear() = 0;
   virtual void erase(const_iterator pos) = 0;
   virtual void erase(const_iterator begin, const_iterator end) = 0;
-  // The following need only be defined for vector
   virtual void reserve(size_type new_capacity) {} 
   virtual void shrink_to_fit() {}
   virtual size_type capacity() const { return size(); }
