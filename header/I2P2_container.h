@@ -47,6 +47,3 @@ struct randomaccess_container : ordered_container {
 
 #endif
 
-/* This file should not be modified 
- * You Vector and List will be derived from these containers */
-
