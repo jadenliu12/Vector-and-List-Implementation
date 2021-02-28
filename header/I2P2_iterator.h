@@ -31,15 +31,11 @@ namespace I2P2
     virtual bool operator>(const iterator_impl_base &rhs) const = 0;
     virtual bool operator<=(const iterator_impl_base &rhs) const = 0;
     virtual bool operator>=(const iterator_impl_base &rhs) const = 0;
-  /* This is the base class of all the container-specialized iterators
-   * In order to invoke a derived function from this class
-   * you may have to either do a downcast or invoke from a virtual function */
   };
 
   class vector_iterator : public iterator_impl_base 
   {
     protected:
-  // You may want to declare what your vector_iterator stores here
       pointer vec;
     public:
       vector_iterator();
@@ -66,7 +62,6 @@ namespace I2P2
   class list_iterator : public iterator_impl_base 
   {
     protected:
-  // You may want to declare what your list_iterator stores here
       Node* _node;
     public:
       list_iterator() : _node(nullptr) {}
@@ -128,10 +123,6 @@ namespace I2P2
       bool operator>=(const const_iterator &rhs) const;
       Node* node_ref() {return p_->node_ref();}
       pointer ptr_ref() const {return p_->ptr_ref();}
-  /* This class holds an iterator_impl_base
-   * and you may want to have some ways to 
-   * invoke a container-specialized method from here
-   * for insert/erase methods (look at their parameters if you are not sure) */
   };
 
   class iterator : public const_iterator 
