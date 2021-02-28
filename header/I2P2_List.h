@@ -10,14 +10,11 @@ namespace I2P2
   class List : public ordered_container 
   {
     protected:
-  // you may want to declare necessary members for your List container here
       Node* head;
       Node* tail;
       size_type _size;
 
-  /* The following are standard methods from the STL
-   * If you are not sure what they do
-   * look them up and implement your own version */
+  /* The following are standard methods from the STL */
     public:
       ~List();
       List();
