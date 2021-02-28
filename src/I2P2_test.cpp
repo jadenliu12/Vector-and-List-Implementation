@@ -875,6 +875,3 @@ void check_vector() {
 }
 #endif
 }  // namespace I2P2_test
-
-/* This file should not be modified */
-
