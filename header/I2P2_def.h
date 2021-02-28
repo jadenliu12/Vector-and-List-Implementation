@@ -22,7 +22,3 @@ namespace I2P2 {
 }
 
 #endif
-
-/* Here is just some definitions for the types that your implementation should deal with
- * They should be pretty intuitive, and this file shouldn't be modified */
-
