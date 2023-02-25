@@ -1,4 +1,4 @@
-# Vector-and-List-Implementation
+# Vector and List Implementation
 
 ## Basic Informations  
 Description: An implementation of STL's vector and list data structures.  
